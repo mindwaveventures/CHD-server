@@ -1,0 +1,30 @@
+{
+    "ts-node": {
+        "transpileOnly": true,
+        "compilerOptions": {
+            "outDir": "build"
+        }
+    },
+    "compilerOptions": {
+        "target": "ES2015",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "strict": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "typeRoots": [
+            "node_modules/@types",
+            "src/types/*"
+        ]
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "tests"
+    ]
+}
